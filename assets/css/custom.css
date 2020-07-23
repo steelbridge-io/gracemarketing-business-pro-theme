@@ -1,0 +1,484 @@
+/*!
+* Theme Name: gracemarketingagency
+* Theme URI: https://www.gracemarketingagency.com
+* Description: A clean and modern WordPress theme for businesses.
+* Version: 1.0.0
+
+	- Header LOGO, Menu and front-page-1
+	- front-page-2
+	- front-page-3
+	- front-page-4
+	- front-page-5
+	- Specific Pages Posts
+	- Page with Centered Content
+	- Site Footer
+	- Footer Widgets
+	- Custom CSS from header/footer scripts
+	- Media Queries
+
+*/
+/* Header LOGO, Menu and front-page-1
+--------------------------------------------- */
+/* Bold font for text widgets */
+.lead-wrap p.lead {
+	font-weight: 500;
+	font-size: 3rem;
+}
+/* Adds a filter over the images in the  front page widgets */
+#media_image-7 .widget-wrap:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(46, 48, 47, 0.45);
+}
+#media_image-9 .widget-wrap:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(34, 39, 40, 0.35);
+}
+.top-image-text {
+	padding: 1.618em;
+	background-color: #ccc;
+}
+.title-area .custom-logo-link {
+	height:  auto;
+	width: 300px;
+}
+.has-fixed-header .site-header.shrink .custom-logo-link {
+	height:  auto;
+	width: 200px;
+	transition: all 0.3s ease-in-out;
+}
+.page-header:before, .front-page-4:before, .before-footer:before {
+	background-color: rgba(0, 0, 0, 0.56) !important;
+	position: relative;
+}
+.site-header {
+	background-color: #fff;
+	color: #ef9620;
+}
+.site-header a {
+	background-color: #fff;
+	color: #ef9620;
+}
+.site-header a:hover, .site-header a:focus  {
+	background-color: #fff;
+	color: #e0840a;
+}
+.has-fixed-header .site-header.shrink {
+	background-color: #ffffff;
+	box-shadow: 0 0 2rem rgba(35, 44, 57, 0.2);
+}
+#simple-social-icons-1 ul li a:hover {
+	background-color: #ffffff;
+	border-color: #fff;
+	color: #d67a00 !important;
+}
+#simple-social-icons-1 ul li a, #simple-social-icons-1 ul li a:hover {
+	background-color: #ffffff;
+	border-radius: 36px;
+	color: #ef9620 !important;
+	border: 0 #fff solid;
+
+}
+.menu-toggle {
+	background-color: #fff;
+	color: #ef9620;
+	width: 100px;
+	letter-spacing: 0;
+	position:  relative !important;
+	box-shadow: none;
+}
+.menu-toggle a {
+	background-color: white;
+	color: #ef9620;
+	position: relative;
+}
+.menu-toggle:hover, .menu-toggle:focus {
+	background-color: white;
+	color: #ef9620;
+}
+.menu-toggle span {
+	background: #ef9620;
+}
+.menu-toggle span::before,
+.menu-toggle span::after {
+	position: absolute;
+	display: block;
+	background-color: #ef9620;
+}
+.nav-primary {
+	background-color: #fff !important;
+	text-transform: uppercase;
+}
+.menu-item a:hover, .menu-item a:focus, .menu-item.current-menu-item > a {
+	color: #000000;
+}
+.home .content .widget-title {
+	font-size: 40px;
+	font-size: 4rem;
+}
+/* front-page-2
+--------------------------------------------- */
+.front-page-2 {
+	background-color: #F9D19F;
+	color: #fff;
+	margin: 5em 0 0 0;
+}
+.front-page-2 p {
+	font-size: 3rem;
+	font-weight: normal;
+	color: #fff;
+}
+.home .wp-custom-header img {
+	display: inherit;
+	height: 768px;
+}
+
+@media (min-width: 896px){
+	.home .page-header {
+		background-size: contain !important;
+		background-repeat: no-repeat;
+		width: 100%;
+	}
+
+}
+/* front-page-3
+--------------------------------------------- */
+.front-page-3 {
+	background-color: #ffffff;
+	color: #000;
+	padding: 5rem 0;
+}
+.button.orange {
+	background-color: #E17126;
+	font-family: 'Roboto';
+	font-size: 3rem;
+	font-weight: 400;
+	padding: 10px 30px;
+	border-radius: 0;
+}
+.front-page-3 .widget {
+	margin-bottom: 0 !important;
+	padding-bottom: 0;
+}
+/* front-page-4
+--------------------------------------------- */
+
+/* front-page-5
+--------------------------------------------- */
+.front-page-5 {
+	background-color: #F9D19F;
+	color: #000;
+}
+/* Page with Centered Content
+--------------------------------------------- */
+@media (max-width: 895px) {
+	.page.centered-content .page-header {
+		padding-top: 250px;
+		background-size: cover !important;
+		background-repeat: no-repeat;
+		padding-bottom:  0 !important;
+		margin-bottom:  0 !important;
+	}
+	.page.centered-content .content {
+		margin-top: -50px !important;
+	}
+}
+@media (min-width: 896px) {
+	.page.centered-content .page-header {
+		padding-top: 80vh;
+		background-size: cover !important;
+		background-repeat: no-repeat;
+		padding-bottom:  0 !important;
+		margin-bottom:  0 !important;
+	}
+}
+.page.centered-content .page-header h1 {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+/* Site Footer
+--------------------------------------------- */
+.home .content .widget-title {
+	font-size: 40px;
+	font-size: 4rem;
+}
+.before-footer .widget-title {
+	color: #e17126;
+	font-size: 40px;
+	font-size: 4rem;
+}
+.before-footer .wrap {
+	text-align:  center;
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+.before-footer .widget:last-of-type {
+	text-align:  center;
+	display: block;
+	margin: auto;
+	max-width: 500px;
+}
+.newsletter-p {
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding-bottom: 20px;
+}
+.before-footer .widget_text {
+	padding-top: 50px !important;
+}
+.before-footer .enews-widget {
+	margin-bottom: -50px !important;
+}
+.before-footer button, .before-footer .button, .before-footer input[type='submit'] {
+	margin: 0;
+	color: #ffffff;
+	background-color: #e17126;
+}
+.before-footer form {
+	position: relative;
+}
+.before-footer .enews input[type='submit'] {
+	display: inline-flex;
+	position: absolute;
+	right: 4px;
+	top: 3px;
+	text-align: center;
+	width: auto;
+}
+.footer-widgets .enews input {
+	border-color: #868686;
+}
+/* Footer Widgets
+--------------------------------------------- */
+.site-footer {
+	background-color: #424343;
+	color: #a4a8ac;
+	position: relative;
+}
+.footer-widgets .widget-title {
+	border-bottom: 1px solid #FF9800;
+	padding-bottom: 9px;
+}
+.footer-widgets .widget-title {
+	font-size: 20px;
+	font-size: 2rem;
+	font-weight: 400;
+}
+.home .content .widget-title {
+	color: #F19A28 !important;
+	font-family: 'roboto-regular';
+	font-size: 5rem;
+	font-weight: 500 !important;
+}
+.home .front-page-5 .widget-title {
+	color: #fff !important;
+}
+
+.home .content .widget p {
+	line-height: 1.6;
+	font-weight: 300;
+}
+
+/* Custom CSS from header/footer scripts
+---------------------------------------------------*/
+.front-page-5 a[href*="house"] {
+	background: url(/wp-content/themes/business-pro-theme/vid4.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	z-index: 9999;
+	min-height: 100px;
+	opacity: 0.9;
+	color: transparent;
+}
+.single-portfolio .content .avatar {
+	border-radius: 50%;
+	marging-top: 10px;
+	width: 45px;
+	height: auto;
+	margin-right: 10px;
+	margin-right: 1rem;
+	float: left;
+}
+
+.single-portfolio .content .entry-meta {
+	font-size: 16px;
+	color: black;
+	margin-top: -10px;
+	display: inline-block;
+}
+
+.single-portfolio .content .entry-meta a {
+	margin-top: 20px;
+}
+.single-portfolio .content .entry-meta a {
+	color: #2196f3;
+}
+
+.single-portfolio .categories {
+	padding-left: 20px;
+	display: inline-flex;
+}
+
+.single-portfolio .date {
+	padding-left: 20px;
+	display: inline-flex;
+}
+
+.single-portfolio .categories:before {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: #FFC107;
+	display: inline-block;
+	margin-top: 7px;
+	margin-right: 10px;
+	padding: 9px;
+	content: url(/wp-content/themes/business-pro-theme/layer1.svg);
+}
+
+.single-portfolio .date:before {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: #FFC107;
+	display: inline-block;
+	margin-top: -4px;
+	margin-right: 10px;
+	padding: 9px;
+	content: url(/wp-content/themes/business-pro-theme/cal1.svg);
+}
+
+.single-portfolio .entry-modified-time {
+	padding-top: 10px;
+}
+.single-portfolio .entry-terms {
+	margin-top: 20px;
+}
+.single-portfolio .author {
+	display: inline-flex;
+	margin-top: -12px;
+	clear: both;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+
+h3.widgettitle.widget-title {
+	font-family: 'Roboto', sans-serif;
+	color: #F19A28;
+}
+
+.homepageheading {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 39px;
+	padding-top: 35px
+}
+
+.hometext {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 26px;
+	padding-top: 25px;
+	text-align: justify;
+}
+
+.button {
+	background-color: #E17126;
+}
+
+#custom_html-14:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #0000008c;
+	background: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+/* Media Queries
+----------------------------------------------- */
+@media (min-width: 1280px) {
+	.front-page-4 {
+		height: 1000px;
+		padding: 40rem 0;
+	}
+	.before-footer {
+		padding: 32rem;
+	}
+}
+
+@media (max-width: 895px) {
+	h2.homepageheading {
+		margin-top: 0;
+		padding: 0.618em 0 0.618em 0;
+	}
+	.front-page-2 {
+		margin: 0;
+	}
+	.title-area .custom-logo-link {
+		height:  auto;
+		width: 200px;
+	}
+	.has-fixed-header .site-header.shrink .custom-logo-link {
+		height:  auto;
+		width: 180px;
+		transition: all 0.3s ease-in-out;
+	}
+	.page-header {
+		background-size: cover !important;
+		background-repeat: no-repeat;
+	}
+	.front-page-1 {
+		margin: 0;
+		padding: 0;
+		height: 50vh;
+		padding-top: 100px;
+	}
+	.home .wp-custom-header img {
+		height: initial !important;
+		background-repeat: no-repeat;
+		display: none !important;
+	}
+}
+@media (min-width: 896px) {
+	.home .page-header {
+		background-size: contain !important;
+		background-repeat: no-repeat;
+	}
+	.front-page-1 {
+		margin: 0;
+		padding: 0;
+		width: 2000px;
+		height: 600px;
+		padding-bottom: 50px;
+		margin-bottom: -120px;
+	}
+}

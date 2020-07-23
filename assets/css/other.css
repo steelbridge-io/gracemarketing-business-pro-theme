@@ -1,0 +1,120 @@
+/* Page with full width Content not on front-page
+--------------------------------------------- */
+@media (max-width: 895px) {
+	.page.full-width-content .page-header {
+		padding-top: 70vh;
+		background-size: contain !important;
+		background-repeat: no-repeat;
+		padding-bottom:  0 !important;
+		margin-bottom:  0 !important;
+	}
+
+	.page.full-width-content .content {
+		margin-top: -25vh !important;
+	}
+}
+
+@media (min-width: 896px) {
+	.page.full-width-content .page-header {
+		padding-top: 80vh;
+		background-size: contain !important;
+		background-repeat: no-repeat;
+		padding-bottom:  0 !important;
+		margin-bottom:  0 !important;
+	}
+}
+
+.page.full-width-content .page-header h1 {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.page.full-width-content .content {
+	margin-top: -20vh;
+}
+
+/* Portfolio Work
+--------------------------------------------- */
+@media (max-width: 895px) {
+	.single-portfolio .page-header {
+		padding-top: 10vh;
+
+	}
+
+	.page.full-width-content .content {
+		margin-top: 0 !important;
+	}
+	.site-inner {
+		background-color: #ffffff;
+		padding-top: 200px;
+	}
+
+}
+@media (min-width: 896px) {
+	.single-portfolio .page-header {
+		padding-top: 30vh;
+	}
+	.site-inner {
+		background-color: #ffffff;
+		/*padding-top: 150px;*/
+	}
+}
+
+
+.page.full-width-content .page-header h1 {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.page.full-width-content .content {
+	margin-top: -20vh;
+}
+
+@media (max-width: 767px){
+	.page.full-width-content .page-header {
+		padding-top: 20vh;
+		background-size: contain !important;
+		background-repeat: no-repeat;
+		padding-bottom: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 895px) {
+	.page.full-width-content .page-header {
+		padding-top: 30vh !important;
+	}
+}
+
+@media (min-width: 896px){
+	.page.full-width-content .page-header {
+		padding-top: 20vh;
+		padding-bottom: 50vh !important;
+
+	}
+}
+
+@media (min-width: 1500px){
+	.page.full-width-content .page-header {
+		padding-top: 0vh;
+		padding-bottom: 50vw !important;
+
+	}
+}
